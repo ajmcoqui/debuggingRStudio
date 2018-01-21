@@ -22,7 +22,7 @@ server <- function(input, output) {
   })
   
   clusters <- reactive({
-    kmeans(selectedDat(), input$clusters) # missing 'a'
+    kmeans(selectedDat(), input$clusters)
   })
   
   output$plot1 <- renderPlot({

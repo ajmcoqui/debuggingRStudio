@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Amanda Gadrow
 Maintainer: Amanda Gadrow <amanda@rstudio.com>
 Description: A very simple set of functions for use in my
-    rstudio::conf 2018 talk on debugging
+    rstudio::conf 2018 talk on debugging.
 License: GPL-2 | file LICENSE
 Depends: 
     R (>= 3.1)
