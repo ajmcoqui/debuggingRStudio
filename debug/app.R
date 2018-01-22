@@ -18,6 +18,7 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   selectedData <- reactive({
+    # cat(file=stderr(), input$xcol, "\n")
     iris[, c(input$xcol, input$ycol)]
   })
   

@@ -1,5 +1,6 @@
 library(tidyverse)
 
+# Separate, flatten, and trim values in the vector
 clean <- function(vec) {
   values <- strsplit(vec, ",")
   flat_values <- unlist(values)
@@ -7,12 +8,14 @@ clean <- function(vec) {
   trimmed_values
 }
 
+# Clean vector and get the unique values
 uniquify <- function(vec) {
   clean_values <- clean(vec)
   unique_values <- unique(clean_values)
   unique_values
 }
 
+# Read data and get unique climate values
 test_it <- function() {
   planets <- read.csv2("planets.csv")
   # planets <- read.csv2("planets.csv", stringsAsFactors = FALSE)

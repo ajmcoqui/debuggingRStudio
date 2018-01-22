@@ -17,5 +17,5 @@ clean_vec <- function(vec) {
 uniquify_vec <- function(vec) {
   clean_values <- clean_vec(vec)
   unique_values <- unique(clean_values)
-  unique_values  # could comment this out and dig into unique() while debugging
+  unique_values
 }
