@@ -1,4 +1,4 @@
-library(tidyverse)
+library(stringr)
 
 clean <- function(vec) {
   values <- strsplit(vec, ",")
@@ -14,10 +14,13 @@ uniquify <- function(vec) {
 }
 
 test_it <- function() {
-  planets <- read.csv2("planets.csv")
-  # planets <- read.csv2("planets.csv", stringsAsFactors = FALSE)
+  moar_planets <- read.csv2("moar_planets.csv", stringsAsFactors = FALSE)
   unique_climate <- uniquify(planets$climate)
   unique_climate
 }
 
 # test other columns; adjust code as needed
+
+
+
+# values <- strsplit(vec, "\\, |\\,|\\|")
