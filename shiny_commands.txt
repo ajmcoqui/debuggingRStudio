@@ -1,0 +1,15 @@
+R script debugging
+------------------
+  values <- strsplit(vec, "\\, |\\,|\\|")
+
+Shiny debugging
+--------------
+
+runApp(appDir = “~/work/rstudio_conf/debugging/debug”, display.mode = “showcase”)
+
+In selectedData
+    # cat(file=stderr(), input$xcol, "\n")
+
+In clusters
+    # cat(file = stderr(), "entering clusters \n")
+

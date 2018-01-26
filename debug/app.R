@@ -18,12 +18,11 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   selectedData <- reactive({
-    # cat(file=stderr(), input$xcol, "\n")
     iris[, c(input$xcol, input$ycol)]
   })
   
   clusters <- reactive({
-    kmeans(selectedDat(), input$clusters)
+    kmeans(selectdData(), input$clusters)
   })
   
   output$plot1 <- renderPlot({

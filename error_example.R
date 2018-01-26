@@ -16,11 +16,8 @@ uniquify <- function(vec) {
 }
 
 # Read data and get unique climate values
-test_it <- function() {
+get_climates <- function() {
   planets <- read.csv2("planets.csv")
-  # planets <- read.csv2("planets.csv", stringsAsFactors = FALSE)
   unique_climate <- uniquify(planets$climate)
   unique_climate
 }
-
-# test other columns; adjust code as needed
