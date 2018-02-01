@@ -1,15 +1,19 @@
 R script debugging
 ------------------
-  values <- strsplit(vec, "\\, |\\,|\\|")
+
+values <- strsplit(vec, "\\, |\\,|\\|")
 
 Shiny debugging
 --------------
 
-runApp(appDir = “~/work/rstudio_conf/debugging/debug”, display.mode = “showcase”)
+runApp(appDir = “~/work/rstudio_conf/debugging/debug”, display.mode = "showcase")
 
 In selectedData
-    # cat(file=stderr(), input$xcol, "\n")
+cat(file=stderr(), "input x is: ", input$xcol, "\n")
 
 In clusters
-    # cat(file = stderr(), "entering clusters \n")
+cat(file = stderr(), "entering clusters \n")
 
+shinyapps.io
+------------
+rsconnect::showLogs(streaming = TRUE)
