@@ -6,7 +6,7 @@ values <- strsplit(vec, "\\, |\\,|\\|")
 Shiny debugging
 --------------
 
-runApp(appDir = “~/work/rstudio_conf/debugging/debug”, display.mode = "showcase")
+runApp(appDir = "~/work/rstudio_conf/debugging/debug", display.mode = "showcase")
 
 In selectedData
 cat(file=stderr(), "input x is: ", input$xcol, "\n")
